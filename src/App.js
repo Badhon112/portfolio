@@ -3,7 +3,7 @@ import React from "react";
 import Index from "./Secound/Index";
 export default function App() {
   return (
-    <div className="">
+    <div>
       <Index />
     </div>
   );
