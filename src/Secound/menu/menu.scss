@@ -1,0 +1,24 @@
+@import '../global.scss';
+.Menu{
+    width: 300px;
+    height: 100vh;
+    background-color: $mainColor;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all 1s ease;
+    // position:fixed;
+    &.After{
+        right: 0;
+        // width: 25%;
+        ul{
+            width: 60%;
+        }
+    }
+}

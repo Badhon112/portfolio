@@ -1,0 +1,11 @@
+.Protfoliolist {
+    font-size: 14px;
+    margin-right: 50px;
+    padding: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+    &.Active {
+      background-color: #15023a;
+      color: white;
+    }
+  }

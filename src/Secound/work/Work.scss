@@ -1,0 +1,80 @@
+.Work {
+  background-color: crimson;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .slider {
+    height: 500px;
+    display: flex;
+    position: absolute;
+    left: 0px;
+    transition: all 1s ease-out;
+    .container {
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .item {
+        width: 700px;
+        height: 100%;
+        background-color: white;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .left {
+          flex: 6;
+          height: 90%;
+          //   background-color: yellow;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .leftcontainer {
+            width: 90%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            .imgcontainer {
+              width: 30%;
+              height: 40%;
+              border-radius: 50%;
+              background-color: rgb(126, 81, 65);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+        }
+        .right {
+          flex: 6;
+          height: 100%;
+          // background-color: yellow;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+          img {
+            width: 400px;
+            transform: rotate(-10deg);
+            // overflow-y: hidden;
+          }
+        }
+      }
+    }
+  }
+  .arrow {
+    height: 50px;
+    position: absolute;
+    cursor: pointer;
+    &.left {
+      left: 100px;
+      transform: rotate(180deg);
+    }
+    &.right {
+      right: 100px;
+    }
+  }
+}
